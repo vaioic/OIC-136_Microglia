@@ -29,3 +29,8 @@ Margarita will send me more data from another project using the same marker to m
 Margarita also has this same microglia line in mCherry, which may help the SNR and overall segmentation results. 
 
 Discussed acquiring a finer z-step for the volumes to improve segmentation and measurements.
+
+Images to keep:
+- Control_MO [02, 04, 05, 06, 07]
+- GNAS_MO_1ng [00, 01, 04]
+- GNAS_MO_2ng [00, 03, 07, 08]
