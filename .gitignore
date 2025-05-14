@@ -1,3 +1,6 @@
+#additional files to ignore
+./Segmentation_Results/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
