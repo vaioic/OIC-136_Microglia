@@ -1,5 +1,5 @@
 #additional files to ignore
-./Segmentation_Results/
+./Segmentation_Results/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
