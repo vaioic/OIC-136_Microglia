@@ -22,7 +22,7 @@ voxel_size_z = 4.55`
 Large Z-step will give more 'boxy' looking cells, may inhibit identification of active and inactive states of microglia.
 
 ### Progress meeting 5-8-2025
-Reviewed current results for analysis pipeline. Some parameter adjustments are needed, either for detection of the original signal or post-processing of the objects to remove false detections. Also need to verify if the measurements are in pixels or to scale.
+Reviewed current segmentation results for analysis pipeline. Some parameter adjustments are needed, either for detection of the original signal or post-processing of the objects to remove false detections. Also need to verify if the measurements are in pixels or to scale.
 
 Margarita will send me more data from another project using the same marker to make sure the pipeline is generalized enough.
 
