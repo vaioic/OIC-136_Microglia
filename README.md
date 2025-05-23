@@ -35,3 +35,12 @@ Images to keep:
 - GNAS_MO_1ng [00, 01, 04]
 - GNAS_MO_2ng [00, 03, 07, 08]
 
+### Progress meeting 5-23-2025
+Met with Margarita, Jacquelyn, and Hannah to review using a Jupyter notebook, the analysis pipeline options (discussed moving forward with CellPose), and measurements for this project. 
+
+Action Items:
+- add in filters to remove any objects touching the border of the image and any very small objects that may not be real cells
+- Switch to using the measurement module from scikit-image to extract more intuitively named measurements
+- Include shape measurements like volume, skeleton length, and solidity
+    - Found a Python package [SKAN](https://skeleton-analysis.org/stable/getting_started/index.html) that may be useful for quantifying the skeleton length and getting a sholl analysis; supports 3D analysis
+    - Volume and solidity can be calculated by [scikit-image](https://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.regionprops)
