@@ -1,4 +1,7 @@
 # OIC-136 Zebrafish Microglia
+
+GitHub Repository: https://github.com/vaioic/OIC-136_Microglia
+
 ### Summary of Request
 From Request:
 >I would like to request the following analyses of microglia from z-stack images of 3 days post-fertilization zebrafish:
@@ -30,11 +33,11 @@ Challenges of dataset: large z-spacing gives boxy objects in z that are less rep
 
 To correct changes in illumination in Z and to increase the signal to background ratio, images were normalized by the mean intensity of the image and then a white top hat filter with `radius=10` was applied.
 
-Example image before normalization and background subtraction:
+Example image before normalization and background subtraction (view in ZX; side view):
 
 ![](snapshots/gnas2ng_05_BeforeNorm_XZ.png)
 
-Example image after normalization and background subtraction:
+Example image after normalization and background subtraction (view in ZX; side view):
 ![](snapshots/gnas2ng_05_AfterNorm_XZ.png)
 
 Normalized images were then passed into CellPose to detect microglia using the following settings:
