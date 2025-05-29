@@ -79,7 +79,7 @@ def get_3D_surfacearea_and_sphericity(mask_img,scaled_df):
     merged_df = pd.concat([scaled_df,surface_areas,sphericities], axis=1)
     return merged_df
 ```
-Each mask object is selected with a threshold equal to the label value of the object and then a combination of (sk = scikit-image) `sk.measure.marching_cubes` and `sk.measure.mesh_surface_area` are used to calculate the surface area of each object to scale. The volume of each object was converted to scale with a different function and then used in the above function to calculate the object's sphericity.
+Each mask object is selected with a threshold equal to the label value of the object and then a combination of (sk = scikit-image) `sk.measure.marching_cubes` and `sk.measure.mesh_surface_area` are used to calculate the surface area of each object to scale. The scaled volume of each object was used to calculate the object's sphericity.
 
 Volume um^3, Surface Area um^2, and Sphericity were appended to the data frame created by `measure.regionprops_table`.
 
