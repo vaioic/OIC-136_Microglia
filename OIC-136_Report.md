@@ -32,10 +32,10 @@ To correct changes in illumination in Z and to increase the signal to background
 
 Example image before normalization and background subtraction:
 
-![](snapshots\gnas2ng_05_BeforeNorm_XZ.png)
+![](.\snapshots\gnas2ng_05_BeforeNorm_XZ.png)
 
 Example image after normalization and background subtraction:
-![](snapshots\gnas2ng_05_AfterNorm_XZ.png)
+![](.\snapshots\gnas2ng_05_AfterNorm_XZ.png)
 
 Normalized images were then passed into CellPose to detect microglia using the following settings:
 ```
@@ -47,9 +47,9 @@ Only the masks were kept, the three other outputs were left blank (i.e. `_, _, _
 
 Example of masks from CellPose:
 
-![](snapshots\gnas2ng_05_Masks_XZ.png)
+![](.\snapshots\gnas2ng_05_Masks_XZ.png)
 
-![](snapshots\gnas2ng_05_Masks_3D.png)
+![](.\snapshots\gnas2ng_05_Masks_3D.png)
 
 
 Scikit-Image's `segmentation.clear_border` and `morphology.remove_small_objects` were used to remove any objects touching the image border or smaller than a volume of 2000 pixels. The volume threshold was determined through a brief screening of unfiltered masks and measurements. *Note: it is probable that small, false detections are still present that are between 2000 pixels^3 and the smallest real microglia detection*
