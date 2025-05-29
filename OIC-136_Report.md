@@ -13,7 +13,7 @@ From Request:
 > 3. Fluorescence intensity
 
 #### Brief summary of analysis pipeline
-Python-based analysis pipeline that normalized images using py-clesperanto package, CellPose to segment microglia and SciKit-Image to measure fluorescence intensities and morphology metrics (volume, surface area, and sphericity). 
+Python-based analysis pipeline that normalized images using [py-clesperanto](https://github.com/clEsperanto/pyclesperanto/tree/main) package, [CellPose v3](https://github.com/MouseLand/cellpose/tree/v3.1.1.2) to segment microglia and [SciKit-Image](https://scikit-image.org) to measure fluorescence intensities and morphology metrics (volume, surface area, and sphericity). 
 
 Custom CellPose model to improve segmentation and skeleton length measurements will be added once data collection approach is fine tuned.
 
@@ -22,7 +22,15 @@ Custom CellPose model to improve segmentation and skeleton length measurements w
 
 Images from the Dragonfly are in the Imaris format (.ims). They are a proprietary type of HDF5 image with a pyramidal structure. These images were converted into multi-page tiff files with ImageJ prior to analysis (open in ImageJ and then save as a tiff).
 
-Voxel size: 4.5 um, 0.3 um, 0.3 um
+#### Metadata - *should this section be added?*
+
+|Dimension|Pixel Size|
+|:--------:|:---:|
+|Z| 4.5 um|
+|X| 0.3 um|
+|Y| 0.3 um|
+
+*Other metadata here?*
 
 Three conditions: control morpholino (MO) (n=8), *gnas*-MO 1ng (n=8), and *gnas*-MO 2ng (n=9)
 
@@ -101,4 +109,4 @@ All data are located at \projects\paradakusz\vari-core-generated-data\OIC\OIC-13
 
 ### Additional Notes
 
-This was a pilot study to test feasibility of analysis and compare CellPose and conventional analysis approaches. CellPose will have greater flexibility to detect the fine branching that can come off of microglia and be trained to ignore variable background noise more reliably. A custom CellPose model will be trained on future data collected with a finer Z-spacing. Additionally, skeleton length will be added to the analysis pipeline as an additional metric for comparing and classifying the different states that microglia can be found in.
+This was a pilot study to test feasibility of analysis and compare CellPose and conventional analysis approaches. CellPose will have greater flexibility to detect the fine branching that can come off of microglia and be trained to ignore variable background noise more reliably. A custom CellPose model will be trained on future data collected with a finer Z-spacing. Additionally, skeleton length will be added to the analysis pipeline as an another metric for comparing and classifying the different states of microglia.
