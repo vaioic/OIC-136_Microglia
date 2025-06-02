@@ -107,6 +107,11 @@ For each image, the normalized/background subtracted image and filtered masks, a
 
 All data are located at \projects\paradakusz\vari-core-generated-data\OIC\OIC-136_Microglia on VAI's network.
 
-### Additional Notes
+### Notes
 
 This was a pilot study to test feasibility of analysis and compare CellPose and conventional analysis approaches. CellPose will have greater flexibility to detect the fine branching that can come off of microglia and be trained to ignore variable background noise more reliably. A custom CellPose model will be trained on future data collected with a finer Z-spacing. Additionally, skeleton length will be added to the analysis pipeline as an another metric for comparing and classifying the different states of microglia.
+
+#### Optional Analyses - what other information could you get from this data
+- A Sholl analysis could be added to assess branching of microglia
+- Nearest neighbor distances could be calculated to assess clustering and distribution
+
