@@ -1,4 +1,3 @@
-![OIC Logo](/OIC%20image.png)
 # OIC-136 Zebrafish Microglia
 Total hours: 23.5
 
