@@ -44,3 +44,5 @@ Action Items:
 - Include shape measurements like volume, skeleton length, and solidity
     - Found a Python package [SKAN](https://skeleton-analysis.org/stable/getting_started/index.html) that may be useful for quantifying the skeleton length and getting a sholl analysis; supports 3D analysis
     - Volume and solidity can be calculated by [scikit-image](https://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.regionprops)
+- Make a good tutorial for Margarita to follow to use the Jupyter notebook on her own
+    - Reach out to Zack R. to get the proper conda envs and kernels set up to use in JupyterLab on the HPC
