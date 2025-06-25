@@ -1,6 +1,8 @@
 #additional files to ignore
 Segmentation_Results/
 *.pdf
+models/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
