@@ -1,4 +1,7 @@
 # OIC-136_Microglia
+
+Conda environment can be recreated with [yaml file](/CellPoseCLE.yaml)
+
 Analysis of microglia activation states in zebrafish
 
 From Request:
